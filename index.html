@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Regular Expression</title>
+
+    <link rel="shortcut icon" href="https://regexone.com/cs/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+
+<body>
+    <div class="contaiter">
+        <div class="header-items">
+            <div class="home" class="header">
+                <img class="logo" src="https://regexone.com/cs/images/favicon.png" alt="lhypl">
+            </div>
+            <div class="page-info">
+                <div class="page-title">RegexOne</div>
+                <div class="page-intro">Learn Regular Expressions with simple, interiactive exercises</div>
+            </div>
+            <div class="tuts-menu wrap-menu">
+                <img src="https://regexone.com/cs/images/icon_tutorial.png" alt="course" height="20rem" width="20rem">
+                <div class="tuts">Interinactive Tutorial</div>
+            </div>
+            <div class="ref-more wrap-menu">
+                <img src="https://regexone.com/cs/images/icon_reference.png" alt="refernce" height="rem" width="20rem">
+                <div class="ref">References & More</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="main-content">
+                <h1 class="lesson-one">Lesson 1: An introduction, and the ABCs</h1>
+                <p>
+                    <strong class="key-word">Regular expressions</strong> are extremely useful in extracting information
+                    from text such as code, log files,
+                    spreadsheets, or even documents. And while there is a lot of theory behind formal languages, the
+                    following lessons and examples will explore the more practical uses of regular expressions so that
+                    you
+                    can use them as quickly as possible.
+                    <br />
+                    <br />
+                    The first thing to recognize when using regular expressions is that <strong
+                        class="key-word">everything
+                        is essentially a character</strong>, and we are writing patterns to match a specific sequence of
+                    characters (also
+                    known as a string). Most patterns use normal ASCII, which includes letters, digits, punctuation and
+                    other symbols
+                    on your keyboard like %#$@!, but unicode characters can also be used to match any type of
+                    international
+                    text.
+                    <br />
+                    <br />
+                    Below are a couple lines of text, notice how the text changes to highlight the matching characters
+                    on
+                    each line as you type in the input field below. To continue to the next lesson, you will need to use
+                    the
+                    new syntax and concept introduced in each lesson to write a pattern that matches all the lines
+                    provided.
+                    <br />
+                    <br />
+                    Go ahead and try writing a pattern that matches all three rows, <strong>it may be as simple as the
+                        common letters on each line</strong>>.
+                </p>
+                <div class="exercise">
+                    <div class="title">Exercise 1: Matching characters</div>
+                    <table class="problem-table">
+                        <tr class="problem-header">
+                            <td>Task</td>
+                            <td>Text</td>
+                        </tr>
+                        <tr>
+                            <td class="problem">Match</td>
+                            <td class="text">abcdef</td>
+                        </tr>
+                        <tr>
+                            <td class="problem">Match</td>
+                            <td class="text">abcde</td>
+                        </tr>
+                        <tr>
+                            <td class="problem">Match</td>
+                            <td class="text">abc</td>
+                        </tr>
+
+                    </table>
+                    <div class="input-pattern">
+                        <form action="#">
+                            <input type="text" name="pattern" id="">
+                            <input type="submit" value="countinue >">
+                        </form>
+                        <div class="solution-hint">
+                            Solve the above task to continue on to the next problem, or read the
+                            <a href="#">Solution</a>
+                            .
+                        </div>
+                    </div>
+
+                </div>
+                <div class="footer">
+                    Next
+                    <a href="#">Lesson 1.5: The 123s</a>
+                </div>
+            </div>
+            <div class="summary-menu">
+                <div class="title-menu">Lesson Notes </div>
+                <table class="table-notes">
+                    <tr class="active">
+                        <td class="key">
+                            <a href="#" title="Lesson 1: An introduction, and the ABCs">abc...</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 1: An introducion, ,and the ABCs">Letters...</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 1&frac12;: The 123s">123...</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 1&frac12;: The 123s">Digits</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="LLesson 1&frac12;: The 123s">\d</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 1&frac12;: The 123s">Any digit</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 1&frac12;: The 123s">\D</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 1&frac12;: The 123s">Any non-digit character</a>
+                        </td>
+                    </tr>
+                
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 2: The Dot">.</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 2: The Dot">Any character...</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 2: The Dot">\.</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 2: The Dot">Period</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="LLesson 3: Matching specific characters">[abc]</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 3: Matching specific characters">Only a, b or c</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 4: Excluding specific characters">[^abc]</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 4: Excluding specific characters">Not a,b nor c</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 5: Character ranges">[a-z]</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 5: Character ranges">character a to z</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 5: Character ranges">[0-9]</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 5: Character ranges">Number 0 to 9</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 5: Character ranges">\w</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 5: Character ranges">Any alhanumberic character.</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 5: Character ranges">\W</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 5: Character ranges">Any non-alphanumberic
+                                character</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 6: Catching some zzz's">{m}</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 6: Catching some zzz's">m repetitions...</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 6: Catching some zzz's">{m,n}</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 6: Catching some zzz's">m to n repetitions...</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 7: Mr. Kleene, Mr. Kleene">*</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 7: Mr. Kleene, Mr. Kleene">Zero or more repetitions</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 7: Mr. Kleene, Mr. Kleene">+</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 7: Mr. Kleene, Mr. Kleene">One or more repetitions</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 8: Characters optional">?</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 8: Characters optional">Optional character</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 9: All this whitespace">\s</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 9: All this whitespace">Any white space</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 9: All this whitespace">\S</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 9: All this whitespace">Any non-white space
+                                character</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 10: Starting and ending">^...$</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 10: Starting and ending">Start and end</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 11: Match groups">(...)</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 11: Match groups">Capture group</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 12: Nested groups">(a(bc))</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 12: Nested groups">Captrure sub-group</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="esson 13: More group work">(.*)</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="esson 13: More group work">Captrure all</a>
+                        </td>
+                    </tr>
+                    <tr class="inactive">
+                        <td class="key">
+                            <a href="#" title="Lesson 14: It's all conditional">(abc|def)</a>
+                        </td>
+                        <td class="description">
+                            <a href="#" title="Lesson 14: It's all conditional">Matches abc or def</a>
+                        </td>
+                    </tr>
+
+                </table>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <div class="text">2019 © RegexOne<br>
+                <a href="#" title="RegexOne Email">Email</a> |
+                <a href="#" title="RegexOne Twitter">Twitter</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
