@@ -1,2 +1,2 @@
 # regular_expresion
-a clone website and practice regular expresion
+a clone ui and practice regular expresion
